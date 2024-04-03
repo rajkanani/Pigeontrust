@@ -15,3 +15,37 @@ You can install Pigeontrust via pip:
 
 ```bash
 pip install pigeontrust
+```
+
+## Usage
+```python
+from pigeontrust import Pigeontrust
+
+# Initialize Pigeontrust
+pigeon = Pigeontrust()
+
+# Verify an email address
+email = "example@email.com"
+verification_result = pigeon.verify(email)
+
+# Get trustworthiness score
+trust_score = pigeon.trustworthiness(email)
+
+# Check availability
+availability = pigeon.check_availability(email)
+```
+
+## Contributing
+Contributions are welcome! If you'd like to contribute to Pigeontrust, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (git checkout -b feature/your_branch_name).
+3. Make your changes.
+4. Commit your changes (git commit -am 'Add some feature').
+5. Push to the branch (git push origin feature/your_branch_name).
+6. Create a new Pull Request.
+
+Please make sure to update tests as appropriate.
+
+## License
+Pigeontrust is licensed under the MIT License.
